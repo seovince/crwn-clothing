@@ -37,8 +37,6 @@ class App extends React.Component {
               ...doc.data()
             }
           })
-
-          console.log(this.state)
         })
       }
       else {
