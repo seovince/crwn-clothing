@@ -17,11 +17,6 @@ import { selectCurrentUser } from './redux/user/user.selector';
 
 import './App.css';
 
-const HatsPage = () => (
-  <div>
-    <h1>HATS PAGE</h1>
-  </div>
-)
 class App extends React.Component {
   unsubscribeFromAuth = null
 
