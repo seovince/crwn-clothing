@@ -44,7 +44,6 @@ class App extends React.Component {
       else {
         setCurrentUser(userAuth)
       }
-
     })
 
   }
@@ -61,7 +60,7 @@ class App extends React.Component {
         <Header />
         <Routes>
           <Route exact path='/' element={<HomePage />} />
-          <Route path='/shop' element={<ShopPage />} />
+          <Route path='/shop/*' element={<ShopPage />} />
           <Route exact path='/checkout' element={<CheckoutPage />} />
           <Route 
             exact 
