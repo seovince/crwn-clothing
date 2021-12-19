@@ -9,7 +9,10 @@ import { auth, signInWithGoogle } from "../../firebase/firebase.utils";
 import { signInWithEmailAndPassword } from 'firebase/auth'
 
 
-import './sign-in.styles.scss';
+import {
+    SignInContainer,
+    ButtonsContainer
+} from './sign-in.styles'
 
 class SignIn extends React.Component {
     constructor(props) {
@@ -45,7 +48,7 @@ class SignIn extends React.Component {
 
     render() {
         return (
-            <div className="sign-in">
+            <SignInContainer>
                 <h2>I already have an account</h2>
                 <span>Sign in with your email and password</span>
 
@@ -64,12 +67,12 @@ class SignIn extends React.Component {
                         handleChange={this.handleChange}
                         label="Password"
                         required />
-                    <div className="buttons">
+                    <ButtonsContainer>
                         <CustomButton type='submit' value='Submit Form' >Sign In</CustomButton>
                         <CustomButton onClick={signInWithGoogle} isGoogleSignIn value='Submit Form' >Sign In with Google</CustomButton>
-                    </div>
+                    </ButtonsContainer>
                 </form>
-            </div>
+            </SignInContainer>
         )
     }
 }

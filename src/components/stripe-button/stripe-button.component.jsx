@@ -1,8 +1,6 @@
 import React from "react";
 import StripeCheckout from "react-stripe-checkout";
 
-import { ReactComponent as Logo } from "../../assets/crown.svg"
-
 const StripeCheckoutButton = ({ price }) => {
     const priceForStripe = price * 100;
     const publishableKey = 'pk_test_51K8JkwH0nS0vBnbusjzdPfRkBVrvKwHHWmyaA3GYCCusLuwvc8BZimpg4wnRANcadNsqlZoUrqKm1OAE1dvAdmiY00A77l4apc'
